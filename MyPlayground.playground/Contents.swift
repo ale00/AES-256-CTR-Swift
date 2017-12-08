@@ -2,7 +2,7 @@ import Foundation
 import IDZSwiftCommonCrypto
 
 let tmp = NSTemporaryDirectory() as NSString
-let encryptedFilePath = Bundle.main.path(forResource: "encrypted", ofType: "pdfenc")
+let encryptedFilePath = Bundle.main.path(forResource: "encrypted", ofType: "pdfenc")!
 var decryptedFilePath = "\(tmp)test.pdf"
 
 var encryptedFileInputStream = InputStream(fileAtPath: encryptedFilePath)!
